@@ -23,3 +23,4 @@ tables.js | テーブル名を表示するサンプル
 test.db | app5.jsやapp6.jsで使用するデータベース
 
 test
+test
