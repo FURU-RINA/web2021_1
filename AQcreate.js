@@ -16,4 +16,6 @@ db.serialize(() => {
     }
     console.log("テーブルを作成しました");
   });
+
+  
 });
