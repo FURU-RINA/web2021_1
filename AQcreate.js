@@ -2,10 +2,12 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('AQ.db');
 
 let schema = `
-create table SPETIAL(
+create table kind(
   id integer primary key,
-  name text not null,
-  count integer
+  Se_id integer ,
+  Re_id integer ,
+  Ma_id integer ,
+  Sp_id integer 
 );
 `
 
