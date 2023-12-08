@@ -2,7 +2,9 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('AQ.db');
 
 let sql = `
-  select * from aquarium;
+  select kind.id, REVER.name
+  from kind inner join REVER
+  on kind.Se_id=REVER.id;
   `
 db.serialize( () => {
   db.all( sql, (error, row) => {
@@ -10,7 +12,7 @@ db.serialize( () => {
       console.log('Error: ', error );         return;
     }
     for( let data of row ) {
-     console.log( data.id + ' : ' + data.areaname +' : ' + data.count + ' : ' + data.money);
+     console.log( data.id + ' : ' + data.name);
     }
   });
 });
