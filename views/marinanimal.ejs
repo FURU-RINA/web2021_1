@@ -1,0 +1,18 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Show message</title>
+</head>
+<body>
+  <h2><%= data[0].水族館 %>詳細</h2>
+  <table>
+    <% for( let row of data ) { %>
+    <tr><td>ID</td><td><%= row.id %></td></tr>
+    <tr><td>名前</td><td><%= row.name %></td></tr>
+    <tr><td>泳いでいる魚の数</td><td><%= row.count %></td></tr>
+  <% } %>
+  </table>
+    <a href="/public/Marinanimal.html">海獣の水槽へ魚を追加</a><br>
+</body>
+</html>

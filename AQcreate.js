@@ -7,7 +7,8 @@ create table kind(
   Se_id integer ,
   Re_id integer ,
   Ma_id integer ,
-  Sp_id integer 
+  Sp_id integer ,
+  count integer not null
 );
 `
 

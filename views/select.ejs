@@ -5,13 +5,16 @@
   <title>Show message</title>
 </head>
 <body>
-  <h2>都道府県ごとの人口</h2>
+  <h2>水族館</h2>
   <table>
       <% for( let row of data ) { %>
         <tr>
             <td><%= row.id %></td>
-            <td><%= row.都道府県 %></td>
-            <td><%= row.人口 %></td>
+            <td> <%= row. Se_id %></td>
+            <td> <%= row. Re_id %></td>
+            <td> <%= row. Ma_id %></td>
+            <td> <%= row. Sp_id %></td>
+            <td> <%= row. count %></td>
         </tr>
       <% } %>
   </table>

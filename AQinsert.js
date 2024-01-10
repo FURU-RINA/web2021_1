@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('AQ.db');
 
 let sql = `
-insert into kind("Se_id","Re_id","Ma_id","Sp_id") values("1","1","1","1");
+insert into kind("Se_id","Re_id","Ma_id","Sp_id","count") values("2","","","","8");
 `
   
 

@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Show message</title>
+</head>
+<body>
+  <h2><%= data[0].水族館 %>詳細</h2>
+  <table>
+    <% for( let row of data ) { %>
+    <tr><td>ID</td><td><%= row.id %></td></tr>
+    <tr><td>エリア名</td><td><%= row.areaname %></td></tr>
+    <tr><td>泳いでいる魚の数</td><td><%= row.count %></td></tr>
+  <% } %>
+  </table>
+    <a href="/sea">海の水槽へのリンク</a><br>
+    <a href="/rever">川の水槽へのリンク</a><br>
+    <a href="/marinanimal">海獣の水槽へのリンク</a><br>
+    <a href="/special">企画水槽へのリンク</a><br>
+</body>
+</html>
